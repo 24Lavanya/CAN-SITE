@@ -1,0 +1,209 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.people {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3f2fd;
+}
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.slide .quote-icon {
+  font-size: 30px;
+  color: #4070f4;
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+
+/* .people-sec {
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;
+    padding: 5rem 0rem;
+}
+
+
+.people-sec h1 {
+    color: rgb(36, 35, 35);
+    text-align: center;
+}
+
+.main-people {
+
+    padding: 0;
+    margin: 0;
+
+    background-color: #f2f2f2;
+}
+
+.wrapper {
+    width: 95%;
+    height: 40em;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.people-container {
+    max-width: 1062px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.people-box {
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-people {
+    object-fit: cover;
+    width: 91px;
+    height: 65px;
+}
+
+.people-box:first-child {
+    margin-left: 0px;
+}
+
+.peopleinfo {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding: 2px 12px;
+    color: black;
+}
+
+.peopleinfo p {
+    height: 5em;
+}
+
+.git,
+.git a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 12px 0;
+    border-radius: 12px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    font-size: 18px;
+    background: linear-gradient(to left bottom, #031a9a, #8853ff);
+    color: #f2f2f2;
+}
+
+.git:hover {
+    transform: scale(1.1);
+}
+
+.btn-toggle {
+    border: none;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to left bottom, #031a9a, #8853ff);
+}
+
+.btn-toggle i {
+    font-size: 36px;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.arrows {
+    top: -22px;
+    position: relative;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border: 2px solid red;
+    align-items: center;
+    width: 8em;
+}
