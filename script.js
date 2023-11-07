@@ -39,3 +39,12 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+//zindex
+
+// const about = document.querySelector(".about");
+var topIndex=100;
+function movetotop(top){
+  top.style.zIndex=++topIndex;
+}
